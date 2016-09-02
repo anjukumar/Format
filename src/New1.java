@@ -1,20 +1,24 @@
+import java.util.Scanner;
+  
+ public class PetQuestions
+ {
+     public static void main( String[] args )
+    {
+    	Scanner keyboard = new Scanner (System.in);
+    	
+        String name;
+        String breed;
+        int age;
 
-public class New1 {
-
-	public static void main( String[] args ) { 
-        //declare variables here before we use them 
-		 	
-				int mynumber;
-				float myothernumber;
-				mynumber = 2;
-				myothernumber = 1.793f;
-				
-			 System.out.println(" My number " +mynumber);
-			 System.out.println(" My number " +myothernumber);
-			 
-			 }
-			
-	
-		}
-
-
+        System.out.print( "Greetings. What is your pet's name? " );
+        name = keyboard.next();
+ 
+        System.out.print( "What kind of animal is " + name + "? " );
+        breed = keyboard.next();
+        
+        System.out.print( "How old is " + name + "? ");
+        age = Integer.parseInt(keyboard.next());
+        
+        System.out.println( name + " is your " + breed + " and it is " + age );
+     }
+ }
